@@ -88,8 +88,9 @@ margin-bottom: 50px;
     padding: 5px 50px;
     border-top: 5px solid #cf5914;
     margin-right: 10px;
-    position: relative;
-    display: none;
+   left: 42%;
+   display: none;
+ 
 
 }
 
@@ -97,11 +98,12 @@ margin-bottom: 50px;
     font-size: 16px;
     color: #f1f1f1;
     font-weight: 500;
-    border-top: 5px solid;
+    border-top: 5px solid #fdeb50;
     padding-top: 5px;
     padding: 5px 40px ;
-    position: relative;
+    left: 50%;
     display: none;
+
 }
 .l3{
     font-size: 16px;
@@ -111,18 +113,24 @@ margin-bottom: 50px;
     padding: 5px 55px;
     border-top: 5px solid #14e214;
     margin-left: 10px;
-    position: relative;
+    left: 57.3%;
     display: none;
-    
+
 }
 .password-info{
     text-align: center;
     width: 550px;
+    height: auto;
     display: flex;
     justify-content: center;
-   
+    margin-bottom: 15px;
     
+}
 
+.password-info span {
+    position: absolute;
+    transform: translateX(-50%);
+    top: 47.5%;
 }
 
 button{

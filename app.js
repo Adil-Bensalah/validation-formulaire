@@ -61,20 +61,51 @@ const src = "ressources/error.svg"
 const password = input[2]
 const passwordLevel1 = document.querySelector('.l1')
 const passwordLevel2 = document.querySelector('.l2')
+const passwordLevel3 = document.querySelector('.l3')
 
 password.addEventListener('keydown',()=>{
-    let regex = /^.{0,}$/
-    let regexNumber =/^(?=.*\d)(?=.*[a-zA-Z])[0-9a-zA-Z]+$/;
+    const regex = /^.{0,6}$/
+    const regexNumber = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$/;
+    const regexSpecial = /^(?=.*[0-9])(?=.*[!@#$%^&*.])[a-zA-Z0-9!@#$%^&*.]{6,}$/
+    const numberOfLetters = password.value.replace(/[^a-z]/gi, "").length
+
+
 if(regex.test(password.value)){  
+passwordLevel1.textContent="faible"    
 passwordLevel1.style.display="block"
 imgError[2].style.display="block"
 }
-else if (regexNumber.test(password.value)) {
+ if (numberOfLetters<1) {
+    passwordLevel1.style.display="none"
+    imgError[2].style.display="block"
+
+}
+
+ if (password.value.match(regexNumber)) {
+    passwordLevel2.textContent="moyen"  
     passwordLevel2.style.display="block"
     imgError[2].style.display="block"
 }
+ else{
+
+    passwordLevel2.textContent=""  
+    passwordLevel2.style.display="none"
+    imgError[2].style.display="block"
+ }
+
+
+
+if (password.value.match(regexSpecial)) {
+    passwordLevel3.textContent="fort"  
+    passwordLevel3.style.display="block"
+    imgError[2].style.display="block"
+}
+
+else{
+    passwordLevel3.textContent=""  
+    passwordLevel3.style.display="none"
+    imgError[2].style.display="block"
+}
+
 
 })
-
-
-
