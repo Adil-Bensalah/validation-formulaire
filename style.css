@@ -1,0 +1,189 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(to right, #d9a7c7, #fffcdc); 
+    font-family: Open sans, Helvetica, sans-serif;
+    padding: clamp(20px, 5vw, 50px) 10px;
+
+}
+
+.container{
+ border: 2px solid black;
+ height: auto;
+ width: 600px;
+margin: auto;
+ padding-top: 30px;
+  background-color:#212121 ;
+  border-radius: 5px;
+  border: 1px solid #ffffffc3;
+
+}
+
+form{
+padding-left: 25px;
+margin-top: 30px;
+
+}
+
+label{
+ font-size: 20px;
+ font-weight: 400;
+color: #f1f1f1;
+}
+input{
+
+height: 40px;
+width: 550px;
+background-color: #212121;
+border: none;
+border-bottom: 1px solid #f1f1f1;
+font-size:16px ;
+color: #f1f1f1;
+outline: none;
+}
+h2{
+    text-align: center;
+    color: #f1f1f1;
+    font-size: 30px;
+
+    
+
+}
+
+.div-button{
+text-align: center;
+}
+.username{
+    margin-bottom: 5px;
+}
+.email{
+    margin-bottom: 5px;
+
+}
+.password{
+    margin-bottom: 5px;
+}
+
+.password-instruction{
+    color: #a9a9a9;
+    margin-bottom: 10px;
+
+}
+.password-confirm{
+margin-bottom: 50px;
+
+}
+
+.l1{
+    font-size: 16px;
+    color: #f1f1f1;
+    font-weight: 500;
+    border-top: 5px solid;
+    padding-top: 5px;
+    padding: 5px 50px;
+    border-top: 5px solid #cf5914;
+    margin-right: 10px;
+    position: relative;
+    display: none;
+
+}
+
+.l2{
+    font-size: 16px;
+    color: #f1f1f1;
+    font-weight: 500;
+    border-top: 5px solid;
+    padding-top: 5px;
+    padding: 5px 40px ;
+    position: relative;
+    display: none;
+}
+.l3{
+    font-size: 16px;
+    color: #f1f1f1;
+    font-weight: 500;
+    padding-top: 5px;
+    padding: 5px 55px;
+    border-top: 5px solid #14e214;
+    margin-left: 10px;
+    position: relative;
+    display: none;
+    
+}
+.password-info{
+    text-align: center;
+    width: 550px;
+    display: flex;
+    justify-content: center;
+   
+    
+
+}
+
+button{
+    font-size: 20px;
+    min-width: 150px; 
+    display: block;
+    margin: 0px auto 40px;
+    padding: 12px 15px;
+    background-color: #fffcdc;
+    border: 1px solid #f1f1f13d;
+    color: #111;
+    border-radius: 3px;
+    font-family: Raleway;
+    font-weight: 600;
+    cursor: pointer;
+    
+
+}
+form button:hover {
+    background-color: #e3dfa2;
+}
+.erroUsername{
+    font-size: 16px;
+    color: #f75252;
+    margin-bottom: 30px;
+
+}
+.errorEmail{
+    font-size: 16px;
+    color: #f75252;
+    margin-bottom: 30px;
+}
+
+
+img{
+    height: 30px;
+    width: 30px; 
+    display: none;
+
+}
+
+.icone-verif1{
+    position: absolute;
+    left: 62.8%;
+    top: 19%;
+}
+
+.icone-verif2{
+    position: absolute;
+    left: 62.8%;
+    top: 29.5%;
+}
+
+.icone-verif3{
+    position: absolute;
+    left: 62.8%;
+    top: 40%;
+}
+
+.icone-verif4{
+    position: absolute;
+    left: 62.8%;
+    
+}
