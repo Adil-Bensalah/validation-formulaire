@@ -130,7 +130,7 @@ margin-bottom: 50px;
 .password-info span {
     position: absolute;
     transform: translateX(-50%);
-    top: 47.5%;
+
 }
 
 button{
@@ -175,23 +175,38 @@ img{
 .icone-verif1{
     position: absolute;
     left: 62.8%;
-    top: 19%;
+
 }
 
 .icone-verif2{
     position: absolute;
     left: 62.8%;
-    top: 29.5%;
+ 
 }
 
 .icone-verif3{
     position: absolute;
     left: 62.8%;
-    top: 40%;
+    
 }
 
 .icone-verif4{
     position: absolute;
     left: 62.8%;
     
+}
+.toastBlock{
+    height: auto;
+    width: auto;
+    position: absolute;
+    right: 2%;
+    bottom: 4%;
+}
+.toast{
+    border: none;
+    padding: 10px 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #f1f1f1;
+    border-radius: 5px;
 }
